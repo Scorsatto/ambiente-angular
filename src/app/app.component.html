@@ -20,11 +20,7 @@
 </ul>
 
 <br>
-<ul class="list-group mx-auto col-3 text-center">
-    <li class="list-group-item" *ngFor="let pessoa of pessoas">
-        O nome da pessoa é {{pessoa.nome}} {{pessoa.sobrenome}}
-    </li>
-</ul>
+<app-list-people></app-list-people>
 
 <br>
 <div class="col-4 mx-auto my-3">
@@ -37,3 +33,14 @@
     <input type="text" class="form-control" placeholder="Digite alguma coisa" [(ngModel)]="text">
     <h4>Saida: {{ text }}</h4>
 </div>
+
+<div class="container my-5">
+    <div class="row d-flex align-items-center justify-content-center">
+        <h2 class="text-center">Listagem Personagens Rick and Morty</h2>
+
+        <div class="col-12">
+            <app-list-api></app-list-api>
+        </div>
+    </div>
+</div>
+<br>
